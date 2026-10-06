@@ -1,0 +1,7 @@
+{
+  "name": "Project 3D - Prototipado Industrial Rápido",
+  "description": "Plataforma industrial de prototipado rápido en Torrijos (Toledo). Cotizador automático de archivos STL con visor 3D interactivo en tiempo real y asistente técnico con IA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

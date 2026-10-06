@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   Project 3D Torrijos - Paleta de Colores Modo Claro Técnico Industrial
+   ========================================================================== */
+:root {
+  --bg-main: #f8fafc;        /* Blanco grisáceo técnico */
+  --bg-card: #ffffff;        /* Blanco puro paneles e interfaz */
+  --border-color: #cbd5e1;   /* Gris acero limpio */
+  --border-subtle: #e2e8f0;  /* Gris claro para divisores */
+  --text-primary: #0f172a;   /* Gris oscuro titanio legibilidad máxima */
+  --text-secondary: #475569; /* Gris pizarra técnico */
+  --text-muted: #64748b;     /* Gris neutro secundario */
+  --accent-cobalt: #0284c7;  /* Azul cobalto industrial */
+  --accent-cobalt-hover: #0369a1; /* Azul oscuro hover */
+  --accent-cyan: #06b6d4;    /* Cian técnico detalles numéricos */
+  --viewport-bg: #f1f5f9;    /* Fondo claro entorno 3D */
+}
+
+/* Fondo General y Tipografía Base */
+body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.011em;
+}
+
+/* Tarjetas de Cotización, Materiales y Paneles 3D en Modo Claro */
+.card-industrial {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.05), 0 2px 4px -2px rgba(15, 23, 42, 0.03);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-industrial:hover {
+  border-color: var(--accent-cobalt);
+  box-shadow: 0 8px 24px -4px rgba(2, 132, 199, 0.12);
+}
+
+/* Jerarquía Tipográfica Titanio */
+h1, h2, h3, h4 {
+  color: var(--text-primary);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.text-metric {
+  color: var(--accent-cobalt);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+}
+
+.text-metric-cyan {
+  color: var(--accent-cyan);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+}
+
+.text-sublabel {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+/* Botones Principales de Acción (CTA) Azul Cobalto Industrial */
+.btn-primary {
+  background-color: var(--accent-cobalt);
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 12px 24px;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.25);
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-cobalt-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.35);
+}
+
+/* Visor 3D y Entorno CAD Claro con Cuadrícula Técnica de Ingeniería */
+#viewport-3d {
+  background-color: var(--viewport-bg);
+  background-image: 
+    radial-gradient(#cbd5e1 1.2px, transparent 1.2px),
+    radial-gradient(#cbd5e1 1.2px, #f1f5f9 1.2px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+}
